@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      "rrweb-player@0.4.6",
+      "D:\\工作\\中科软项目及资料\\云平台\\branch\\dev\\web\\web-pc"
+    ]
+  ],
+  "_from": "rrweb-player@0.4.6",
+  "_id": "rrweb-player@0.4.6",
+  "_inBundle": false,
+  "_integrity": "sha1-5Y/D/GcPA78/mSOGBOPDrVNDbzQ=",
+  "_location": "/rrweb-player",
+  "_phantomChildren": {
+    "@types/smoothscroll-polyfill": "0.3.1",
+    "pako": "1.0.11",
+    "rrweb-snapshot": "0.7.27",
+    "smoothscroll-polyfill": "0.4.4"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "rrweb-player@0.4.6",
+    "name": "rrweb-player",
+    "escapedName": "rrweb-player",
+    "rawSpec": "0.4.6",
+    "saveSpec": null,
+    "fetchSpec": "0.4.6"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/rrweb-player/download/rrweb-player-0.4.6.tgz",
+  "_spec": "0.4.6",
+  "_where": "D:\\工作\\中科软项目及资料\\云平台\\branch\\dev\\web\\web-pc",
+  "author": {
+    "name": "yanzhen@smartx.com"
+  },
+  "bugs": {
+    "url": "https://github.com/rrweb-io/rrweb-player/issues"
+  },
+  "dependencies": {
+    "rrweb": "^0.7.32"
+  },
+  "description": "rrweb's replayer UI",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-plugin-html": "^4.0.6",
+    "npm-run-all": "^4.1.3",
+    "rollup": "^0.66.2",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-svelte": "^4.5.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "sirv-cli": "^0.2.2",
+    "svelte": "^2.16.0"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/rrweb-io/rrweb-player#readme",
+  "keywords": [
+    "rrweb"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "dist/index.mjs",
+  "name": "rrweb-player",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrweb-io/rrweb-player.git"
+  },
+  "scripts": {
+    "autobuild": "rollup -c -w",
+    "build": "rollup -c",
+    "dev": "run-p start:dev autobuild",
+    "prepublishOnly": "npm run build",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
+  },
+  "unpkg": "dist/index.js",
+  "version": "0.4.6"
+}
